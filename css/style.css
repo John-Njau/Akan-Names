@@ -35,9 +35,9 @@ body{
 
 @media only screen and (max-width: 768px){
     body{
-        background-image: none;
-        /* background-image: url('/Assets/akan1.jpg'); */
-        /* background-size: cover; */
+        /* background-image: none; */
+        background-image: url('../Assets/akan1.jpg');
+        background-size: cover;
         /* background-repeat: y-repeat; */
         /* background-repeat: repeat-x; */
         background-color: #aaa;
