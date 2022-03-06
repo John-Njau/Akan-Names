@@ -56,4 +56,26 @@ document.querySelector('#submit').addEventListener('click', ()=>{
 
           test.appendChild(document.createElement("br"));
 
+          // Adding go back button
+          var button = document.createElement("button");
+          button.innerText = 'Go Back';
+          button.style.backgroundColor = 'blue';
+          button.style.color = '#fff';
+          button.style.margin = '5%';
+          button.style.padding = '10px 3%';
+          button.style.border = "none";
+
+          // Append in test div
+          // var body = document.getElementById("test");
+          test.appendChild(button);
+
+          // Add event handler
+          button.addEventListener ("click", function() {
+          // alert("did something");
+          window.location='index.html';
+              
+          });
+
+      }
+
 });
