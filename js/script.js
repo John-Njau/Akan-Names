@@ -41,7 +41,7 @@ document.querySelector('#submit').addEventListener('click', ()=>{
         return false;
     }
     else {
-        // Akan name generator results
+      // Akan name generator results
       if (gender === "male"){
           var dNone = document.getElementById('akanForm');
           dNone.style.display = "none";
@@ -75,6 +75,43 @@ document.querySelector('#submit').addEventListener('click', ()=>{
           window.location='index.html';
               
           });
+    }
+
+           // Akan name generator results
+      if (gender === "male"){
+        var dNone = document.getElementById('akanForm');
+        dNone.style.display = "none";
+        let name = maleNames[birthDate];
+        let test = document.getElementById('test');
+        test.textContent = `You were born on ${dateStr}. Your Akan Name is ${name}.`;
+        test.style.backgroundColor = "#ddd";
+        test.style.fontSize = "1rem";
+        // test.style.border = "2px solid black";
+        test.style.margin = '10%';
+        test.style.padding = '5%';
+
+        test.appendChild(document.createElement("br"));
+
+        // Adding go back button
+        var button = document.createElement("button");
+        button.innerText = 'Go Back';
+        button.style.backgroundColor = 'blue';
+        button.style.color = '#fff';
+        button.style.margin = '5%';
+        button.style.padding = '10px 3%';
+        button.style.border = "none";
+
+        // Append in test div
+        // var body = document.getElementById("test");
+        test.appendChild(button);
+
+        // Add event handler
+        button.addEventListener ("click", function() {
+        // alert("did something");
+        window.location='index.html';
+            
+        });
+
 
       }
 
