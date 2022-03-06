@@ -1,7 +1,7 @@
 body{
     /* background-color: rgb(241, 239, 239); */
     background-image: url("../Assets/akan1.jpg");
-
+    /* background-repeat: no-repeat; */
     background-size: cover;
     /* background-color: yellow; */
 }
@@ -15,8 +15,13 @@ body{
 
 }
 
+#footer{
+    display: none!important;
+}
+
 #back-btn{
     margin-left: 5%!important;
+    /* padding: 10px 20px!important; */
     /* margin-bottom: 20%!important; */
 }
 
@@ -44,7 +49,7 @@ body{
         background-size: cover;
         background-repeat: no-repeat;
     }
-
+   
     #result{
         font-size: 2em;
         background-color: #000000; 
@@ -56,5 +61,8 @@ body{
 
     #back-btn{
         margin: auto;
+    }
+    #footer{
+        display: block!important;
     }
 }
