@@ -40,4 +40,20 @@ document.querySelector('#submit').addEventListener('click', ()=>{
         gender.focus();
         return false;
     }
+    else {
+        // Akan name generator results
+      if (gender === "male"){
+          var dNone = document.getElementById('akanForm');
+          dNone.style.display = "none";
+          let name = maleNames[birthDate];
+          let test = document.getElementById('test');
+          test.textContent = `You were born on ${dateStr}. Your Akan Name is ${name}.`;
+          test.style.backgroundColor = "#ddd";
+          test.style.fontSize = "1rem";
+          // test.style.border = "2px solid black";
+          test.style.margin = '10%';
+          test.style.padding = '5%';
+
+          test.appendChild(document.createElement("br"));
+
 });
