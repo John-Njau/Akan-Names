@@ -1,82 +1,69 @@
-body{
-    background-image: url('../Assets/akan1.jpg');
+body {
+  background-image: url("../Assets/akan1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Rokkitt", serif;
+}
+
+#nameFont {
+  font-family: "RocknRoll One", sans-serif !important;
+}
+
+.flag {
+  margin: auto 2%;
+}
+
+.description {
+  margin: 5% 2%;
+}
+
+#table {
+  margin-top: 5%;
+}
+
+#seeBtn:hover {
+  color: black !important;
+  background-color: rgb(26, 104, 206) !important;
+}
+
+#read:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(24, 79, 161) !important;
+}
+
+#akanName {
+  color: #fff !important;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url("../Assets/akan1.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Fira Sans', sans-serif;
-font-family: 'Roboto Mono', monospace;
-font-family: 'Rokkitt', serif;
+    background-color: #aaa;
+  }
+  #container-one {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+  }
 
-}
+  .flag {
+    margin: auto;
+  }
 
-#nameFont{
-    font-family: 'RocknRoll One', sans-serif!important;
-}
+  .description {
+    margin: auto;
+  }
 
-.flag{
-    /* align-items: center; */
-    /* text-align: center; */
-    margin: auto 2%;
-}
-
-.description{
-    margin: 5% 2%;
-}
-
-#table{
-    margin-top: 5%;
-}
-
-#seeBtn:hover{
-    color: black!important;
-    background-color: rgb(26, 104, 206)!important;
-}
-
-#read:hover{
-    color: rgb(255, 255, 255)!important;
-    background-color: rgb(24, 79, 161)!important;
-}
-
-#akanName{
-    color: #fff!important;
-}
-
-@media only screen and (max-width: 768px){
-    body{
-        /* background-image: none; */
-        background-image: url('../Assets/akan1.jpg');
-        background-size: cover;
-        /* background-repeat: y-repeat; */
-        /* background-repeat: repeat-x; */
-        background-color: #aaa;
-    }
-    #container-one{
-        /* flex-wrap: wrap; */
-        flex-direction: column;
-        /* background-color: aquamarine; */
-        justify-content: center;
-        gap: 2em;
-    }
-
-    .flag{
-        /* align-items: center; */
-        /* text-align: center; */
-        margin: auto;
-    }
-
-    .description{
-        margin: auto;
-    }
-
-    #table{
-        margin: auto;
-        /* color: #fff!important; */
-        
-    }
-    #akanName{
-        /* color: rgb(2, 2, 2)!important; */
-        color: white!important;
-    }
-  footer{
-      display: none!important;
+  #table {
+    margin: auto;
+  }
+  #akanName {
+    color: white !important;
+  }
+  footer {
+    display: none !important;
   }
 }
