@@ -49,12 +49,12 @@ document.querySelector('#submit').addEventListener('click', () => {
             let name = maleNames[birthDate];
             let result = document.getElementById('result');
             result.textContent = `You were born on ${dateStr}. Your Akan Name is ${name}.`;
-            result.style.backgroundColor = "#ddd";
-            result.style.fontSize = "1rem";
+            // result.style.backgroundColor = "#ddd";
+            // result.style.fontSize = "1rem";
             // result.style.border = "2px solid black";
-            result.style.margin = '10%';
+            // result.style.margin = '7%';
             result.style.padding = '5%';
-            result.style.opacity = "0.5";
+            // result.style.opacity = "0.5";
 
             result.appendChild(document.createElement("br"));
 
@@ -86,11 +86,11 @@ document.querySelector('#submit').addEventListener('click', () => {
             let name = femaleNames[birthDate];
             let result = document.getElementById('result');
             result.textContent = `You were born on ${dateStr}. Your Akan Name is ${name}.`;
-            result.style.backgroundColor = "#ddd";
-            result.style.fontSize = "1rem";
+            // result.style.backgroundColor = "#ddd";
+            // result.style.fontSize = "1rem";
             // result.style.border = "2px solid black";
-            result.style.margin = '10%';
-            result.style.padding = '5%';
+            // result.style.margin = '7%';
+            // result.style.padding = '5%';
 
             result.appendChild(document.createElement("br"));
 
