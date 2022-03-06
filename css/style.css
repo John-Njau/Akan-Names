@@ -1,6 +1,11 @@
-body{
+#main{
     background-image: url('/Assets/akan1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     /* background-repeat: repeat-y; */
+}
+
+body{
+    /* height: 90%; */
+    height: 100%;
 }
