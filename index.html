@@ -1,168 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link   rel="stylesheet" 
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-            crossorigin="anonymous">
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto+Mono:wght@200;400&family=RocknRoll+One&family=Rokkitt:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="Assets/GHANA-flag-round.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto+Mono:wght@200;400&family=RocknRoll+One&family=Rokkitt:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="Assets/GHANA-flag-round.png"
+      type="image/x-icon"
+    />
     <title>Akan Names</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="conatiner-fluid pb-5" id="main">
-        <nav class="navbar navbar-expand-lg bg-secondary navbar-dark " >
+      <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+        <div class="container">
+          <a href="htmlFiles/akanPage.html" class="navbar-brand" id="nameFont"
+            >Akan Names</a
+          >
+
+          <!-- Adding a hamburger menu -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="htmlFiles/akanPage.html" class="nav-link"
+                  >Your Akan Name</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#questions" class="nav-link">Questions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- body content -->
+      <div
+        class="d-flex justify-content-evenly mx-4 p-3 flex-wrap"
+        id="container-one"
+      >
+        <div class="flag">
+          <div
+            class="bg-image"
+            style="
+              background-image: url('Assets/GHANA-flag-round.png');
+              background-size: cover;
+              height: 100px;
+              width: 100px;
+            "
+          ></div>
+          <h1>
+            Akan <br />
+            Names
+          </h1>
+        </div>
+        <div class="description align-center w-50 w-md-75">
+          <div class="h2 text-center">About the Akan</div>
+          <p class="text-center">
+            The Akan are a meta-ethnicity living primarily in the countries of
+            present-day Ghana and Ivory Coast.
+          </p>
+          <section id="learn" class="p-3 bg-dark text-light">
             <div class="container">
-                <a href="htmlFiles/akanPage.html" class="navbar-brand" id="nameFont">Akan Names</a>
-
-                    <!-- Adding a hamburger menu -->
-                    <button 
-                    class="navbar-toggler" 
-                    type="button" 
-                    data-bs-toggle="collapse" 
-                    data-bs-target="#navmenu" 
-                    >
-                    <span class="navbar-toggler-icon "></span>
-                    </button>
-
-                    <!--This will show the three side lines on the side in a smaller screen  -->
-                <div class="collapse navbar-collapse " id="navmenu">
-                    <!-- nav bar navigation class -->
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="htmlFiles/akanPage.html" class="nav-link">Your Akan Name</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#questions" class="nav-link ">Questions</a>
-                        </li>
-                    </ul>
+              <div class="row align-items-center justify-content-between">
+                <div class="col-md p-1">
+                  <h2>Akan Naming System</h2>
+                  <p class="class-lead">
+                    In Akan culture, the newborn are given their first name with
+                    regards to the day of the week in which they were born and
+                    in respect to their gender. These "day names" have further
+                    meanings concerning the soul and character of the person.
+                    <br />
+                    Interesting, right?
+                  </p>
+                  <a
+                    href="https://en.wikipedia.org/wiki/Akan_names"
+                    class="btn btn-light mt-3"
+                    id="read"
+                  >
+                    <i class="bi bi-chevron-right"></i> Read More
+                  </a>
                 </div>
-            </div>
-        </nav>
-        <!-- body content -->
-        <div class="d-flex justify-content-evenly mx-4 p-3 flex-wrap" id="container-one">
-            <div class="flag ">
-                <div class="bg-image" 
-                style=" 
-                background-image: url('Assets/GHANA-flag-round.png');
-                background-size: cover;
-                height: 100px;
-                width: 100px;">
-                <!-- <h2 class="p-1 fs-3">Akan <br><br> Names</h2> -->
+                <div class="col-md">
+                  <img src="./Assets/naming.webp" class="img-fluid" alt="" />
                 </div>
-                <h1>Akan <br> Names</h1>
+              </div>
             </div>
-            <div class="description align-center w-50 w-md-75">
-                <div class="h2 text-center" >About the Akan</div>
-                <!-- <img src="Assets/akan2.jpg" alt="" class="img-fluid h-25 "> -->
-                <p class="text-center">The Akan are a meta-ethnicity living primarily in the countries of present-day
-                     Ghana and Ivory Coast. </p>
-                <section id="learn" class="p-3 bg-dark text-light">
-                    <div class="container">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col-md p-1 ">
-                                <h2>Akan Naming System</h2>
-                                <p class="class-lead">
-                                    In Akan culture, the newborn are given their
-                                    first name with regards to the day of the week in 
-                                    which they were born and in respect to their gender.
-                                    These "day names" have further meanings 
-                                    concerning the soul and character of the person. <br>
-                                    Interesting, right?
-                                </p>
-                                <a href="https://en.wikipedia.org/wiki/Akan_names" class="btn btn-light mt-3" id="read">
-                                   <i class="bi bi-chevron-right"></i> Read More
-                                </a>
-                            </div>
-                            <div class="col-md">
-                                <img src="./Assets/naming.webp" class="img-fluid"  alt="">
-                            </div>
-                        </div>
-                    </div>
-                </section>                <!-- <img src="Assets/akan3.jpg" alt="" class="img-fluid h-25 "> -->
-                
-            </div>
-            <div id="table">
-                <div class="h3 text-center text-dark" id="akanName" >The Akan Names</div>
-                <table class="table lead text-light bg-dark">
-                    <thead>
-                        <tr>
-                            <th scope="col">Day</th>
-                            <th scope="col">Male</th>
-                            <th scope="col">Female</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Sunday</td>
-                            <td>Kwasi</td>
-                            <td>Akosua</td>
-                        </tr>
-                        <tr>
-                            <td>Monday</td>
-                            <td>Kwadwo</td>
-                            <td>Adwoa</td>
-                        </tr>
-                        <tr>
-                            <td>Teusday</td>
-                            <td>Kwabena</td>
-                            <td>Abenaa</td>
-                        </tr>
-                        <tr>
-                            <td>Wednesday</td>
-                            <td>Kwaku</td>
-                            <td>Akua</td>
-                        </tr>
-                        <tr>
-                            <td>Thursday</td>
-                            <td>Yaw</td>
-                            <td>Yaa</td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td>Kofi</td>
-                            <td>Afua</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday</td>
-                            <td>Kwame</td>
-                            <td>Ama</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+          </section>
         </div>
-       
-        <div class="button p-4 text-center" >
-            <a href="htmlFiles/akanPage.html" class="btn text-light m-3 bg-dark text-center border-0 rounded shadow" id="seeBtn">
-                See Your Akan Name  <i class="bi bi-chevron-right"></i>
-             </a>
-            <!-- <a href="htmlFiles/akanPage.html"><input type="button" class="bg-dark text-light border-0 shadow-lg rounded" value="See Your Akan Name"></a> -->
+        <div id="table">
+          <div class="h3 text-center text-dark" id="akanName">
+            The Akan Names
+          </div>
+          <table class="table lead text-light bg-dark">
+            <thead>
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Male</th>
+                <th scope="col">Female</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sunday</td>
+                <td>Kwasi</td>
+                <td>Akosua</td>
+              </tr>
+              <tr>
+                <td>Monday</td>
+                <td>Kwadwo</td>
+                <td>Adwoa</td>
+              </tr>
+              <tr>
+                <td>Teusday</td>
+                <td>Kwabena</td>
+                <td>Abenaa</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>Kwaku</td>
+                <td>Akua</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>Yaw</td>
+                <td>Yaa</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>Kofi</td>
+                <td>Afua</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>Kwame</td>
+                <td>Ama</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <footer class="footer bg-dark text-center text-white fixed-bottom">
+      </div>
+
+      <div class="button p-4 text-center">
+        <a
+          href="htmlFiles/akanPage.html"
+          class="btn text-light m-3 bg-dark text-center border-0 rounded shadow"
+          id="seeBtn"
+        >
+          See Your Akan Name <i class="bi bi-chevron-right"></i>
+        </a>
+      </div>
+      <footer class="footer bg-dark text-center text-white fixed-bottom">
         <div class="container d-flex justify-content-between">
-            <p class="lead">All Rights Reserved &copy; 2022</p>
-            <p class="lead"> Designed & Developed by John Njau</p>
+          <p class="lead">All Rights Reserved &copy; 2022</p>
+          <p class="lead">Designed & Developed by John Njau</p>
         </div>
-    </footer>
+      </footer>
     </div>
-    
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-     crossorigin="anonymous"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
-    <!-- <script src="js/script2.js"></script> -->
-</body>
+  </body>
 </html>
