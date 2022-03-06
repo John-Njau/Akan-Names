@@ -1,11 +1,50 @@
 #main{
-    background-image: url('/Assets/akan1.jpg');
+    /* background-image: url('/Assets/akan1.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     /* background-repeat: repeat-y; */
+    /* height: 100vh; */
 }
 
-body{
-    /* height: 90%; */
-    height: 100%;
+.flag{
+    /* align-items: center; */
+    /* text-align: center; */
+    margin: auto 2%;
+}
+
+.description{
+    margin: 5% 2%;
+}
+
+#table{
+    margin-top: 5%;
+}
+
+#seeBtn:hover{
+    color: black;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 768px){
+    #container-one{
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        /* background-color: aquamarine; */
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .flag{
+        /* align-items: center; */
+        /* text-align: center; */
+        margin: auto;
+    }
+
+    .description{
+        margin: auto;
+    }
+
+    #table{
+        margin: auto;
+    }
 }
