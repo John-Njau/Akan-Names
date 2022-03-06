@@ -15,40 +15,38 @@
       href="/Assets/GHANA-flag-round.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/akanPage.css" />
     <title>Generate Akan Name</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a href="/index.html" class="navbar-brand text-dark">Home</a>
 
         <!-- Adding a hamburger menu -->
-        <button
+        <!-- <button
           class="navbar-toggler bg-dark"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navmenu"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+         <span class="navbar-toggler-icon"></span> -->
+        <!-- </button> -->
 
-        <div class="collapse navbar-collapse" id="navmenu">
+        <!-- <div class="collapse navbar-collapse" id="navmenu"> -->
           <!-- nav bar navigation class -->
           <ul class="navbar-nav ms-auto text-dark">
             <li class="nav-item">
               <a href="#" class="nav-link text-dark">Your Akan Name</a>
-            </li>
-            <li class="nav-item">
-              <a href="#questions" class="nav-link text-dark">Questions</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="container-fluid" id="main">
+        <h1 class="text-center p-5 ">Akan Name Generator</h1>
       <form
-        class="form-group bg-dark text-light opacity-75 text-center"
+        class="form-group text-dark opacity-50 text-center m-5 p-5 mw-50"
         action=""
         id="akanForm"
         name="akanForm"
@@ -57,21 +55,33 @@
         <label for="year-of-birth">Year Of Birth :</label><br />
         <input type="number" id="year" name="yob" min="1900" max="2021" /><br />
 
-        <label for="month">Month :</label><br />
+        <label for="month">Month:</label><br />
         <input type="number" id="month" min="1" max="12" name="month" /><br />
-        <label for="DoB">Date Of Birth :</label><br />
+        <label for="DoB">Date:</label><br />
         <input type="number" id="date" min="1" max="31" name="dob" /><br />
-        <label for="gender">Gender :</label><br />
+        <label for="gender">Gender:</label><br />
         <select id="gender" name="gender">
           <option value="select-gender">select gender</option>
           <option value="male">Male</option>
           <option value="female">Female</option>
         </select>
         <br />
-        <input type="reset" id="reset" onclick="akanReset()" value="Reset" />
+        <input type="reset" id="reset" value="Reset" />
         <input type="button" id="submit" value="Submit" />
       </form>
-      <div id="test"></div>
+      <div id="result" >
+
+      </div>
+      <div id="back-btn">
+        <a href="/index.html" class="text-center"><input type="button" class="bg-dark text-light border-0 rounded" value="Back"></a>
+        </div>
+
+      <footer class="footer bg-dark text-center text-white fixed-bottom">
+        <div class="container d-flex justify-content-between">
+            <p class="lead">All Rights Reserved &copy; 2022</p>
+            <p class="lead"> Designed & Developed by John Njau</p>
+        </div>
+    </footer>
     </div>
 
     <script
@@ -79,6 +89,8 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="/js/script.js"></script>
+    <!-- <script src="/js/script2.js"></script> -->
   </body>
 </html>
