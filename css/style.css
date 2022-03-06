@@ -63,9 +63,13 @@ body{
     #table{
         margin: auto;
         /* color: #fff!important; */
+        
     }
     #akanName{
-        color: rgb(2, 2, 2)!important;
+        /* color: rgb(2, 2, 2)!important; */
+        color: white!important;
     }
-  
+  footer{
+      display: none!important;
+  }
 }
