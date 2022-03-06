@@ -78,10 +78,10 @@ document.querySelector('#submit').addEventListener('click', ()=>{
     }
 
            // Akan name generator results
-      if (gender === "male"){
+      if (gender === "female"){
         var dNone = document.getElementById('akanForm');
         dNone.style.display = "none";
-        let name = maleNames[birthDate];
+        let name = femaleNames[birthDate];
         let test = document.getElementById('test');
         test.textContent = `You were born on ${dateStr}. Your Akan Name is ${name}.`;
         test.style.backgroundColor = "#ddd";
@@ -111,8 +111,70 @@ document.querySelector('#submit').addEventListener('click', ()=>{
         window.location='index.html';
             
         });
+    }
 
-
-      }
+    }
 
 });
+
+// jquery user input validation
+$(function () {
+    $( "#year" ).change(function() {
+       var max = parseInt($(this).attr('max'));
+       var min = parseInt($(this).attr('min'));
+       if ($(this).val() > max)
+       {
+        
+        window.alert('Year is Invalid, check again')
+           $(this).val(max);
+       }
+       else if ($(this).val() < min)
+       {
+        //    $(this).val(min);
+        window.alert('Year is Invalid, check again');
+           $(this).val(min);
+       }       
+     }); 
+ });
+
+ $(function () {
+    $( "#month" ).change(function() {
+       var max = parseInt($(this).attr('max'));
+       var min = parseInt($(this).attr('min'));
+       if ($(this).val() > max)
+       {
+        
+        window.alert('Month is Invalid, check again')
+           $(this).val(max);
+    
+       }
+       else if ($(this).val() < min)
+       {
+        //    $(this).val(min);
+        window.alert('Month is Invalid, check again')
+            $(this).val(min);
+       }       
+     }); 
+ });
+
+
+ $(function () {
+    $( "#date" ).change(function() {
+       var max = parseInt($(this).attr('max'));
+       var min = parseInt($(this).attr('min'));
+       if ($(this).val() > max)
+       {
+        //    $(this).val(max);
+        window.alert('Date is Invalid, check again')
+           $(this).val(max);
+       }
+       else if ($(this).val() < min)
+       {
+        //    $(this).val(min);
+        window.alert('Date is Invalid, check again')
+            $(this).val(min);
+       }       
+     }); 
+ });
+
+
