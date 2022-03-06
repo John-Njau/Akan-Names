@@ -1,6 +1,6 @@
 body{
     /* background-color: rgb(241, 239, 239); */
-    background-image: url("../Assets/akan1.jpg");
+    background-image: url("Assets/akan1.jpg");
     background-size: cover;
 }
 
@@ -38,7 +38,7 @@ body{
         width: 50%;
     }
     body{
-        background-image: url("../Assets/akan1.jpg");
+        background-image: url("Assets/akan1.jpg");
         background-size: cover;
         background-repeat: no-repeat;
     }
