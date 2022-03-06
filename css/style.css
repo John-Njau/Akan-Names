@@ -2,7 +2,14 @@ body{
     background-image: url('../Assets/akan1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Fira Sans', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Rokkitt', serif;
 
+}
+
+#nameFont{
+    font-family: 'RocknRoll One', sans-serif!important;
 }
 
 .flag{
