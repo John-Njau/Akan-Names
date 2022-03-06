@@ -1,14 +1,58 @@
+body{
+    /* background-color: rgb(241, 239, 239); */
+    background-image: url("../Assets/akan1.jpg");
+    background-size: cover;
+}
+
 #akanForm{
-    background-color: rgba(44, 37, 37, 0.5);
+    background-color: rgba(44, 37, 37, 0.8);
+    font-weight: 900!important;
+    color: rgb(255, 255, 255)!important;
+    /* margin: auto auto; */
+    text-transform: uppercase;
+
+}
+
+#back-btn{
+    margin-left: 5%!important;
+    /* margin-bottom: 20%!important; */
+}
+
+#result{
+    text-align: center;
+    /* background-color: #7e2323; */
+    opacity: 0.6;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    font-weight: 500;
 }
 
 @media only screen and (min-width: 768px){
     #akanForm{
-        background-color: rgb(3, 130, 241);
+        /* background-color: rgb(3, 130, 241); */
         /* width: 50vw; */
-        margin: auto auto ;
+        margin: auto auto!important;
         /* align-items: center; */
         justify-content: center;
         padding: auto;
+        width: 50%;
+    }
+    body{
+        background-image: url("../Assets/akan1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #result{
+        font-size: 2em;
+        background-color: #000000; 
+        margin: auto auto!important;
+        font-weight: 400!important;
+        width: 50%;
+        color: #fff;
+    }
+
+    #back-btn{
+        margin: auto;
     }
 }
