@@ -46,15 +46,16 @@ document.querySelector('#submit').addEventListener('click', ()=>{
           var dNone = document.getElementById('akanForm');
           dNone.style.display = "none";
           let name = maleNames[birthDate];
-          let test = document.getElementById('test');
-          test.textContent = `You were born on ${dateStr}. Your Akan Name is ${name}.`;
-          test.style.backgroundColor = "#ddd";
-          test.style.fontSize = "1rem";
-          // test.style.border = "2px solid black";
-          test.style.margin = '10%';
-          test.style.padding = '5%';
+          let result = document.getElementById('result');
+          result.textContent = `You were born on ${dateStr}. Your Akan Name is ${name}.`;
+          result.style.backgroundColor = "#ddd";
+          result.style.fontSize = "1rem";
+          // result.style.border = "2px solid black";
+          result.style.margin = '10%';
+          result.style.padding = '5%';
+          result.style.opacity = "0.5";
 
-          test.appendChild(document.createElement("br"));
+          result.appendChild(document.createElement("br"));
 
           // Adding go back button
           var button = document.createElement("button");
@@ -65,14 +66,14 @@ document.querySelector('#submit').addEventListener('click', ()=>{
           button.style.padding = '10px 3%';
           button.style.border = "none";
 
-          // Append in test div
-          // var body = document.getElementById("test");
-          test.appendChild(button);
+          // Append in result div
+          // var body = document.getElementById("result");
+          result.appendChild(button);
 
           // Add event handler
           button.addEventListener ("click", function() {
           // alert("did something");
-          window.location='index.html';
+          window.location='akanPage.html';
               
           });
     }
@@ -82,15 +83,15 @@ document.querySelector('#submit').addEventListener('click', ()=>{
         var dNone = document.getElementById('akanForm');
         dNone.style.display = "none";
         let name = femaleNames[birthDate];
-        let test = document.getElementById('test');
-        test.textContent = `You were born on ${dateStr}. Your Akan Name is ${name}.`;
-        test.style.backgroundColor = "#ddd";
-        test.style.fontSize = "1rem";
-        // test.style.border = "2px solid black";
-        test.style.margin = '10%';
-        test.style.padding = '5%';
+        let result = document.getElementById('result');
+        result.textContent = `You were born on ${dateStr}. Your Akan Name is ${name}.`;
+        result.style.backgroundColor = "#ddd";
+        result.style.fontSize = "1rem";
+        // result.style.border = "2px solid black";
+        result.style.margin = '10%';
+        result.style.padding = '5%';
 
-        test.appendChild(document.createElement("br"));
+        result.appendChild(document.createElement("br"));
 
         // Adding go back button
         var button = document.createElement("button");
@@ -101,14 +102,14 @@ document.querySelector('#submit').addEventListener('click', ()=>{
         button.style.padding = '10px 3%';
         button.style.border = "none";
 
-        // Append in test div
-        // var body = document.getElementById("test");
-        test.appendChild(button);
+        // Append in result div
+        // var body = document.getElementById("result");
+        result.appendChild(button);
 
         // Add event handler
         button.addEventListener ("click", function() {
         // alert("did something");
-        window.location='index.html';
+        window.location='akanPage.html';
             
         });
     }
