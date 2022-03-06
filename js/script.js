@@ -83,6 +83,7 @@ document.querySelector('#submit').addEventListener('click', () => {
         if (gender === "female") {
             var dNone = document.getElementById('akanForm');
             dNone.style.display = "none";
+            document.getElementById('back-btn').style.display = "none";
             let name = femaleNames[birthDate];
             let result = document.getElementById('result');
             result.textContent = `You were born on ${dateStr}. Your Akan Name is ${name}.`;
