@@ -13,7 +13,7 @@
     <title>Akan Names</title>
 </head>
 <body>
-    <div class="conatiner-fluid" id="main">
+    <div class="conatiner-fluid pb-5" id="main">
         <nav class="navbar navbar-expand-lg bg-secondary navbar-dark " >
             <div class="container">
                 <a href="htmlFiles/akanPage.html" class="navbar-brand">Akan Names</a>
@@ -42,72 +42,89 @@
                 </div>
             </div>
         </nav>
-        <div class="d-flex justify-content-around flex-wrap">
-            <div class="flag">
+        <!-- body content -->
+        <div class="d-flex justify-content-evenly mx-4 p-3 flex-wrap">
+            <div class="flag ">
                 <div class="bg-image" 
                 style=" 
                 background-image: url('Assets/GHANA-flag-round.png');
                 background-size: cover;
-                height: 90px;">
+                height: 100px;
+                width: 100px;">
+                <!-- <h2 class="p-1 fs-3">Akan <br><br> Names</h2> -->
                 </div>
-                Akan Names
+                <h1>Akan Names</h1>
             </div>
-            <div class="description">
-
+            <div class="description align-center w-25">
+                <div class="h3 text-center">About the Akan</div>
+                <!-- <img src="Assets/akan2.jpg" alt="" class="img-fluid h-25 "> -->
+                <p class="lead bg-secondary m-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, quasi esse dicta, a autem possimus pariatur iusto repudiandae, velit officiis iste maiores nostrum porro consequatur dolor corporis hic eum temporibus?</p>
+                <!-- <img src="Assets/akan3.jpg" alt="" class="img-fluid h-25 "> -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In esse inventore, sint illum doloribus reprehenderit nihil dolor veniam, vitae ipsum nam, neque maiores totam nesciunt debitis aut laborum mollitia. Magni?</p>
             </div>
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">Day</th>
-                        <th scope="col">Male</th>
-                        <th scope="col">Female</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Sunday</td>
-                        <td>Kwasi</td>
-                        <td>Akosua</td>
-                    </tr>
-                    <tr>
-                        <td>Monday</td>
-                        <td>Kwadwo</td>
-                        <td>Adwoa</td>
-                    </tr>
-                    <tr>
-                        <td>Teusday</td>
-                        <td>Kwabena</td>
-                        <td>Abenaa</td>
-                    </tr>
-                    <tr>
-                        <td>Wednesday</td>
-                        <td>Kwaku</td>
-                        <td>Akua</td>
-                    </tr>
-                    <tr>
-                        <td>Thursday</td>
-                        <td>Yaw</td>
-                        <td>Yaa</td>
-                    </tr>
-                    <tr>
-                        <td>Friday</td>
-                        <td>Kofi</td>
-                        <td>Afua</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday</td>
-                        <td>Kwame</td>
-                        <td>Ama</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div>
+                <div class="h3 text-center text-danger">The Akan Names</div>
+                <table class="table lead text-light bg-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Male</th>
+                            <th scope="col">Female</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Kwasi</td>
+                            <td>Akosua</td>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Kwadwo</td>
+                            <td>Adwoa</td>
+                        </tr>
+                        <tr>
+                            <td>Teusday</td>
+                            <td>Kwabena</td>
+                            <td>Abenaa</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Kwaku</td>
+                            <td>Akua</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Yaw</td>
+                            <td>Yaa</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Kofi</td>
+                            <td>Afua</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>Kwame</td>
+                            <td>Ama</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="button text-center p-4">
+            <a href="htmlFiles/akanPage.html" class="text-center"><input type="button" class="bg-dark text-light border-0 shadow-lg rounded" value="Generate Akan Name"></a>
         </div>
     </div>
+    <!-- <footer class="footer bg-dark text-center text-white">
+        <div class="container d-flex justify-content-between">
+            <p class="lead">All Rights Reserved &copy; 2022</p>
+            <p class="lead"> Designed & Developed by John Njau</p>
+        </div>
+    </footer> -->
 
 
 
-
-    <a href="htmlFiles/akanPage.html"><input type="button" class="bg-dark text-light border-0 shadow-lg rounded" value="Generate Akan Name"></a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
