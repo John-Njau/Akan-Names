@@ -1,9 +1,8 @@
-#main{
-    /* background-image: url('/Assets/akan1.jpg'); */
+body{
+    background-image: url('/Assets/akan1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-repeat: repeat-y; */
-    /* height: 100vh; */
+
 }
 
 .flag{
@@ -21,11 +20,28 @@
 }
 
 #seeBtn:hover{
-    color: black;
-    background-color: #fff;
+    color: black!important;
+    background-color: rgb(26, 104, 206)!important;
+}
+
+#read:hover{
+    color: rgb(255, 255, 255)!important;
+    background-color: rgb(24, 79, 161)!important;
+}
+
+#akanName{
+    color: #fff!important;
 }
 
 @media only screen and (max-width: 768px){
+    body{
+        background-image: none;
+        /* background-image: url('/Assets/akan1.jpg'); */
+        /* background-size: cover; */
+        /* background-repeat: y-repeat; */
+        /* background-repeat: repeat-x; */
+        background-color: #aaa;
+    }
     #container-one{
         /* flex-wrap: wrap; */
         flex-direction: column;
@@ -46,5 +62,10 @@
 
     #table{
         margin: auto;
+        /* color: #fff!important; */
     }
+    #akanName{
+        color: rgb(2, 2, 2)!important;
+    }
+  
 }
