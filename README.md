@@ -14,7 +14,6 @@ This application generates your Akan Name based on your gender and day of birth.
 - [Technologies Used](#technologies-used)
 - [Design](#design)
 - [Live link](#live-link)
-- [Reference](#reference)
 - [Known Bugs](#known-bugs)
 - [License](#license)
 - [Authors Info](#author-Info)
@@ -70,11 +69,6 @@ Here is the live link to the website.
 
 - https://John-Njau.github.io/Akan-Names/
 
-# Reference
-
-- Bootstrap Documentation
-- W3 Schools
-- Moringa Canvas
 
 # Known Bugs
 
